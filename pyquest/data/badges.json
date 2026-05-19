@@ -1,0 +1,58 @@
+[
+  {
+    "id": "first_steps",
+    "name": "First Steps",
+    "description": "Completed your very first lesson.",
+    "icon": "👣",
+    "criteria": {"type": "complete_lesson", "lesson_id": "01_what_is_programming"}
+  },
+  {
+    "id": "hello_world",
+    "name": "Hello, World!",
+    "description": "Made Python say something on the screen.",
+    "icon": "👋",
+    "criteria": {"type": "complete_lesson", "lesson_id": "03_print"}
+  },
+  {
+    "id": "variable_master",
+    "name": "Variable Master",
+    "description": "You learned how to store data in variables.",
+    "icon": "📦",
+    "criteria": {"type": "complete_lesson", "lesson_id": "04_variables"}
+  },
+  {
+    "id": "input_pro",
+    "name": "Conversationalist",
+    "description": "Wrote code that listens to a user.",
+    "icon": "💬",
+    "criteria": {"type": "complete_lesson", "lesson_id": "07_input"}
+  },
+  {
+    "id": "looper",
+    "name": "Looper",
+    "description": "Built your first loop.",
+    "icon": "🔁",
+    "criteria": {"type": "complete_lesson", "lesson_id": "09_loops"}
+  },
+  {
+    "id": "halfway",
+    "name": "Halfway There",
+    "description": "Completed 5 lessons.",
+    "icon": "⛰️",
+    "criteria": {"type": "complete_count", "count": 5}
+  },
+  {
+    "id": "all_starter",
+    "name": "Python Apprentice",
+    "description": "Completed all 10 starter lessons.",
+    "icon": "🐍",
+    "criteria": {"type": "complete_count", "count": 10}
+  },
+  {
+    "id": "streak_3",
+    "name": "On a Roll",
+    "description": "Maintained a 3-day learning streak.",
+    "icon": "🔥",
+    "criteria": {"type": "streak", "days": 3}
+  }
+]

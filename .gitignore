@@ -1,0 +1,36 @@
+# ---- secrets / user state ----
+.env
+userdata/
+
+# ---- bundled fonts (each user fetches their own; we ship instructions only) ----
+pyquest/data/fonts/*.ttf
+pyquest/data/fonts/*.otf
+
+# ---- python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- environments ----
+.venv/
+venv/
+env/
+
+# ---- editors / OS ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- builds / packaging ----
+build/
+dist/
+*.spec
+

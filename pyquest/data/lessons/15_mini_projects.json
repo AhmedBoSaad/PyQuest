@@ -1,0 +1,17 @@
+{
+  "id": "15_mini_projects",
+  "order": 15,
+  "title": "Mini projects",
+  "category": "Projects",
+  "xp_reward": 0,
+  "objective": "Coming soon — put everything together: number guesser, quiz game, to-do list.",
+  "explanation_md": "Coming soon!",
+  "example_code": "",
+  "exercise_prompt": "",
+  "starter_code": "",
+  "hints": [],
+  "expected_output": "",
+  "check": {"type": "none"},
+  "quiz": [],
+  "coming_soon": true
+}

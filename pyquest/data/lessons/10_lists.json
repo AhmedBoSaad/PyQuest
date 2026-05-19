@@ -1,0 +1,44 @@
+{
+  "id": "10_lists",
+  "order": 10,
+  "title": "Lists — collections of things",
+  "category": "Data",
+  "xp_reward": 110,
+  "objective": "Create a list, read items from it, and use it in a loop.",
+  "explanation_md": "## Lists\n\nA **list** is an ordered collection. You make one with square brackets `[ ]`:\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\n```\n\n### Reading items\n\nLists are indexed starting at **0**:\n\n```python\nprint(fruits[0])   # apple\nprint(fruits[1])   # banana\nprint(fruits[-1])  # cherry  (negative indexes count from the end)\n```\n\n### Useful operations\n\n```python\nfruits.append(\"date\")    # adds to the end\nlen(fruits)               # how many items\nsum([1, 2, 3])            # 6\n```\n\n### Loops + lists go together\n\n```python\nfor fruit in fruits:\n    print(fruit)\n```\n\n## Your turn\n\nGiven the list of numbers below, print their **sum**.\n\n```python\nnumbers = [3, 5, 7, 9, 11]\n```\n\nThe expected output is one line with the number `35`.",
+  "example_code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfor fruit in fruits:\n    print(fruit)",
+  "exercise_prompt": "Given numbers = [3, 5, 7, 9, 11], print their sum.",
+  "starter_code": "numbers = [3, 5, 7, 9, 11]\n# print the sum of all numbers\n",
+  "hints": [
+    "Python has a built-in sum() function.",
+    "Try: print(sum(numbers))",
+    "Or use a loop with total = 0; for n in numbers: total += n; print(total)."
+  ],
+  "expected_output": "35",
+  "check": {"type": "stdout_equals", "value": "35", "strip": true, "case_sensitive": true},
+  "quiz": [
+    {
+      "q": "What is the index of the FIRST item in a Python list?",
+      "options": ["1", "0", "-1", "It depends"],
+      "answer": 1,
+      "explain": "Lists are zero-indexed."
+    },
+    {
+      "q": "Given items = [10, 20, 30], what does items[-1] give?",
+      "options": ["10", "20", "30", "Error"],
+      "answer": 2,
+      "explain": "Negative indexes count from the end. -1 is the last item."
+    },
+    {
+      "q": "How do you add an item to the end of a list?",
+      "options": [
+        "list.add(item)",
+        "list.append(item)",
+        "list.push(item)",
+        "list += item"
+      ],
+      "answer": 1,
+      "explain": "append() adds an item to the end."
+    }
+  ]
+}

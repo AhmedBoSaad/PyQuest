@@ -1,0 +1,33 @@
+{
+  "id": "04_variables",
+  "order": 4,
+  "title": "Variables — labelled boxes",
+  "category": "Basics",
+  "xp_reward": 60,
+  "objective": "Store a value in a variable and use it.",
+  "explanation_md": "## Variables\n\nA **variable** is a labelled box that holds a value. You make one with the `=` sign:\n\n```python\nname = \"Ada\"\nage = 30\n```\n\nNow `name` holds the text `\"Ada\"` and `age` holds the number `30`. You can then use these names anywhere you'd use the value:\n\n```python\nprint(name)   # shows: Ada\nprint(age)    # shows: 30\n```\n\n### Naming rules\n\n- Use lowercase letters, numbers, and underscores: `first_name`, `score2`.\n- Don't start with a number.\n- Avoid special characters and spaces.\n- Pick names that mean something — `score` is much better than `x`.\n\n## Your turn\n\nMake a variable called `city` and set it to the text `Cairo`. Then `print(city)` so it shows on screen.",
+  "example_code": "name = \"Ada\"\nprint(name)",
+  "exercise_prompt": "Create a variable called city with the value Cairo, then print it.",
+  "starter_code": "# Make a variable named city, then print it.\n\n",
+  "hints": [
+    "Start with: city = \"Cairo\"",
+    "Then on the next line: print(city)",
+    "Don't put quotes around city when you print it — that would print the word city."
+  ],
+  "expected_output": "Cairo",
+  "check": {"type": "stdout_equals", "value": "Cairo", "strip": true, "case_sensitive": true},
+  "quiz": [
+    {
+      "q": "What does this code print?\nx = 5\nprint(x)",
+      "options": ["x", "\"x\"", "5", "Nothing"],
+      "answer": 2,
+      "explain": "x holds the value 5, so print(x) shows 5."
+    },
+    {
+      "q": "Which is the BEST variable name for a person's age?",
+      "options": ["a", "x1", "age", "the_persons_age_in_years_right_now"],
+      "answer": 2,
+      "explain": "Short but meaningful is the sweet spot."
+    }
+  ]
+}

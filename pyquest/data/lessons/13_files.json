@@ -1,0 +1,17 @@
+{
+  "id": "13_files",
+  "order": 13,
+  "title": "Files",
+  "category": "Building blocks",
+  "xp_reward": 0,
+  "objective": "Coming soon — read and write text files.",
+  "explanation_md": "Coming soon!",
+  "example_code": "",
+  "exercise_prompt": "",
+  "starter_code": "",
+  "hints": [],
+  "expected_output": "",
+  "check": {"type": "none"},
+  "quiz": [],
+  "coming_soon": true
+}

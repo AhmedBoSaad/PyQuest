@@ -1,0 +1,17 @@
+{
+  "id": "11_dictionaries",
+  "order": 11,
+  "title": "Dictionaries",
+  "category": "Data",
+  "xp_reward": 0,
+  "objective": "Coming soon — store key/value pairs.",
+  "explanation_md": "Coming soon!",
+  "example_code": "",
+  "exercise_prompt": "",
+  "starter_code": "",
+  "hints": [],
+  "expected_output": "",
+  "check": {"type": "none"},
+  "quiz": [],
+  "coming_soon": true
+}

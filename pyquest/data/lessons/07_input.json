@@ -1,0 +1,43 @@
+{
+  "id": "07_input",
+  "order": 7,
+  "title": "Listening to the user with input()",
+  "category": "Basics",
+  "xp_reward": 80,
+  "objective": "Read text from the user and use it.",
+  "explanation_md": "## input()\n\n`input()` pauses the program and waits for the user to type something.\n\n```python\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name + \"!\")\n```\n\nThe text inside `input(...)` is the prompt the user sees. Whatever they type is given back as a **string** and stored in the variable.\n\nNote: in PyQuest, you provide your inputs upfront in the **Inputs** box on the right (one per line) — that's how the lesson tester sends answers to your program.\n\n## Your turn\n\nWrite a program that:\n\n1. Asks for the user's name with `input()` (any prompt is fine).\n2. Prints exactly: `Hello, NAME!`  (where NAME is what they typed).\n\nFor the auto-check, the test will type `Ada` as the input, so your program should print: `Hello, Ada!`.",
+  "example_code": "name = input(\"Your name? \")\nprint(\"Hello, \" + name + \"!\")",
+  "exercise_prompt": "Read a name with input() and print: Hello, NAME!",
+  "starter_code": "name = input(\"Your name? \")\n# now print the greeting\n",
+  "hints": [
+    "Store the input in a variable: name = input(\"Your name? \")",
+    "Then: print(f\"Hello, {name}!\")",
+    "Make sure you put an exclamation mark at the end."
+  ],
+  "expected_output": "Hello, Ada!",
+  "check": {
+    "type": "stdout_contains",
+    "value": "Hello, Ada!",
+    "case_sensitive": true,
+    "inputs": ["Ada"]
+  },
+  "quiz": [
+    {
+      "q": "What type does input() always return?",
+      "options": ["a number", "a string (text)", "True or False", "a list"],
+      "answer": 1,
+      "explain": "Even if the user types digits, input() gives you a string."
+    },
+    {
+      "q": "If you want a number from the user, you need to…",
+      "options": [
+        "Hope for the best",
+        "Convert the string with int(...) or float(...)",
+        "Use print() instead",
+        "Spell input differently"
+      ],
+      "answer": 1,
+      "explain": "Wrap input() in int() or float() to get an actual number."
+    }
+  ]
+}
