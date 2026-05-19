@@ -29,7 +29,7 @@ _FALLBACK = {
         "1. NEVER write the complete solution. Hints only.",
         "2. Always explain WHY the code is wrong in plain English.",
         "3. Reason about the EXACT code in context, not earlier versions.",
-        "4. No markdown headings, bullets, or emojis — replies get read aloud.",
+        "4. No markdown headings, bullets, or emojis (replies get read aloud).",
         "5. Keep replies under 120 words unless asked for more.",
     ],
     "personas": {
@@ -53,7 +53,7 @@ def _load_personas() -> dict:
             raise ValueError("personas.json missing 'personas' key")
         return data
     except (OSError, ValueError, _json.JSONDecodeError) as exc:
-        log.warning("Failed to load personas.json (%s) — using built-in defaults", exc)
+        log.warning("Failed to load personas.json (%s); using built-in defaults", exc)
         return _FALLBACK
 
 
@@ -105,7 +105,7 @@ class LessonContext:
 
     def as_system_block(self) -> str:
         parts = [
-            f"Current lesson: {self.order:02d} — {self.title}",
+            f"Current lesson: {self.order:02d}. {self.title}",
             f"Objective: {self.objective}" if self.objective else "",
             f"Student is currently on the {self.page} screen.",
             self._escalation_line(),
@@ -155,7 +155,7 @@ class LessonContext:
             tier = "Mistake count this lesson: 0. Fresh start. Calm baseline tone."
         elif n == 1:
             tier = (
-                "Mistake count this lesson: 1. First slip — mild irritation. "
+                "Mistake count this lesson: 1. First slip, mild irritation. "
                 "Light ribbing, still teaching."
             )
         elif n == 2:
@@ -177,7 +177,7 @@ class LessonContext:
             tier = (
                 f"Mistake count this lesson: {n}. Maximum rage mode. "
                 "Pretend you're about to retire over this. "
-                "Lean into the bit hard — long-suffering, dramatic, mock-furious. "
+                "Lean into the bit hard: long-suffering, dramatic, mock-furious. "
                 "Crucially: STILL TEACH. Even at max anger, the reply MUST end with a concrete, "
                 "actionable hint at the specific bug. No solution code."
             )

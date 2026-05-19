@@ -88,8 +88,8 @@ class SettingsPage(QWidget):
         apl.addWidget(apsub)
 
         self.theme_combo = QComboBox()
-        self.theme_combo.addItem("Dark — warm ink", "dark")
-        self.theme_combo.addItem("Light — warm cream", "light")
+        self.theme_combo.addItem("Dark (warm ink)", "dark")
+        self.theme_combo.addItem("Light (warm cream)", "light")
         current_theme = get_theme()
         for i in range(self.theme_combo.count()):
             if self.theme_combo.itemData(i) == current_theme:
@@ -255,7 +255,7 @@ class SettingsPage(QWidget):
         self.proactive_cb.setChecked(get_proactive_tutor())
         lml.addWidget(self.proactive_cb)
 
-        # Persona picker — populated from data/personas.json
+        # Persona picker (populated from data/personas.json)
         from pyquest.services.tutor import list_personas
         self.persona_combo = QComboBox()
         for pid, label in list_personas():
@@ -297,8 +297,8 @@ class SettingsPage(QWidget):
         ah = QLabel("About")
         ah.setObjectName("H2")
         ainfo = QLabel(
-            f"{APP_NAME} v{APP_VERSION} — a friendly Python learner with voice + an optional local AI tutor.\n"
-            "Sandbox: subprocess + AST guard + 5s timeout. Not a security boundary — "
+            f"{APP_NAME} v{APP_VERSION}. A friendly Python learner with voice + an optional local AI tutor.\n"
+            "Sandbox: subprocess + AST guard + 5s timeout. Not a security boundary, so "
             "do not paste untrusted code."
         )
         ainfo.setObjectName("Dim")
@@ -594,7 +594,7 @@ class SettingsPage(QWidget):
             try:
                 models = lmstudio_client.list_models(url, timeout=1.5)
             except Exception:  # noqa: BLE001
-                return  # server not up — that's fine, user can hit ↻ manually
+                return  # server not up; that's fine, user can hit Refresh manually
             if not models:
                 return
             # Marshal back to UI thread.

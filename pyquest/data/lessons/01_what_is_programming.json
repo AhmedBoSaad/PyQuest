@@ -5,9 +5,9 @@
   "category": "Foundations",
   "xp_reward": 30,
   "objective": "Understand what programming actually is, in plain English.",
-  "explanation_md": "## What is programming?\n\nA computer is very fast, but very literal. It only does **exactly** what you tell it.\n\n**Programming** is the act of giving a computer a list of clear, step-by-step instructions to solve a problem or build something useful.\n\nThink of a recipe:\n\n1. Crack two eggs into a bowl.\n2. Whisk them.\n3. Pour into a hot pan.\n4. Wait two minutes.\n5. Serve.\n\nIf any step is missing or out of order, the dish fails. Code is the same — order, spelling, and small details matter.\n\n## Why Python?\n\nPython is a **programming language** — a way of writing instructions that the computer can read. It is famous for being one of the easiest languages to learn because it reads almost like English.\n\nIn the next lessons you will write your very first Python instructions. Don't worry about memorising — just keep going.",
+  "explanation_md": "## What is programming?\n\nA computer is very fast, but very literal. It only does **exactly** what you tell it.\n\n**Programming** is the act of giving a computer a list of clear, step-by-step instructions to solve a problem or build something useful.\n\nThink of a recipe:\n\n1. Crack two eggs into a bowl.\n2. Whisk them.\n3. Pour into a hot pan.\n4. Wait two minutes.\n5. Serve.\n\nIf any step is missing or out of order, the dish fails. Code is the same, order, spelling, and small details matter.\n\n## Why Python?\n\nPython is a **programming language**, a way of writing instructions that the computer can read. It is famous for being one of the easiest languages to learn because it reads almost like English.\n\nIn the next lessons you will write your very first Python instructions. Don't worry about memorising, just keep going.",
   "example_code": "",
-  "exercise_prompt": "There's no exercise for this lesson — just take in the idea, then continue.",
+  "exercise_prompt": "There's no exercise for this lesson, just take in the idea, then continue.",
   "starter_code": "",
   "hints": [],
   "expected_output": "",
@@ -27,7 +27,7 @@
     {
       "q": "Why is order and spelling important when programming?",
       "options": [
-        "It isn't — computers guess what you mean",
+        "It isn't; computers guess what you mean",
         "Because the computer is very literal and only does what you actually wrote",
         "Because Python automatically fixes mistakes",
         "Only spelling matters, not order"

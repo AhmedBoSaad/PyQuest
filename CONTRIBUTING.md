@@ -25,20 +25,20 @@ python run.py
 
 ### Lessons
 
-The biggest win. Drop a JSON file in `pyquest/data/lessons/` following the schema in the README. The validator will tell you about missing fields with friendly hints. Order numbers should be unique and sequential — pick the next free integer.
+The biggest win. Drop a JSON file in `pyquest/data/lessons/` following the schema in the README. The validator will tell you about missing fields with friendly hints. Order numbers should be unique and sequential, so pick the next free integer.
 
 ### Tutor personas
 
 Edit `pyquest/data/personas.json` and add an entry under `personas`. Each persona has:
 
-- `label` — what shows in the Settings dropdown
-- `body` — list of lines that get joined into the system prompt
+- `label`: what shows in the Settings dropdown
+- `body`: list of lines that get joined into the system prompt
 
 The "teaching core" rules (never write the solution, no markdown headings, etc.) are appended automatically to every persona so you don't need to repeat them.
 
 ### Bug reports
 
-Open an [Issue](../../issues). The app has a **Report a bug** button in Settings that pre-fills the GitHub issue body with your recent log tail — please use it.
+Open an [Issue](../../issues). The app has a **Report a bug** button in Settings that pre-fills the GitHub issue body with your recent log tail. Please use it.
 
 ### Code
 
@@ -49,21 +49,21 @@ PRs against `main` are fine. For anything bigger than a small fix, please open a
 ```
 run.py
   └─ pyquest.app.main()
-       ├─ pyquest.logging_setup       — local rotating logger
-       ├─ pyquest.ui.main_window      — QMainWindow, sidebar, topbar, page stack
+       ├─ pyquest.logging_setup       : local rotating logger
+       ├─ pyquest.ui.main_window      : QMainWindow, sidebar, topbar, page stack
        │    ├─ pages/dashboard, learning_path, lesson_view, quiz_view, settings_view
        │    └─ widgets/code_editor, console, xp_bar, badge_popup,
        │       mic_button, narration_bar, tutor_drawer, welcome_wizard
-       ├─ pyquest.core                — runner, ast_guard, checker, progress (SQLite),
+       ├─ pyquest.core                : runner, ast_guard, checker, progress (SQLite),
        │                                lesson_loader (+ validator)
-       └─ pyquest.services            — tts (Kokoro narrator), kokoro_tts, speech (Vosk),
+       └─ pyquest.services            : tts (Kokoro narrator), kokoro_tts, speech (Vosk),
                                         commands (utterance parser), tutor (LLM), lmstudio_client
 ```
 
 State lives in `userdata/`:
-- `progress.db` — SQLite with schema migrations
-- `logs/pyquest.log` — rotating local log
-- `kokoro/` and `vosk/` — downloaded models
+- `progress.db`: SQLite with schema migrations
+- `logs/pyquest.log`: rotating local log
+- `kokoro/` and `vosk/`: downloaded models
 
 ## Releasing (maintainers)
 
@@ -74,4 +74,4 @@ State lives in `userdata/`:
 
 ## Code of conduct
 
-Be kind. The Drill Sergeant persona is for the AI tutor only — humans get warm.
+Be kind. The Drill Sergeant persona is for the AI tutor only; humans get warm.

@@ -1,4 +1,4 @@
-"""PyQuest Studio theme — editorial.
+"""PyQuest Studio theme: editorial.
 
 Two palettes: dark "ink" (warm near-black) and light "cream" (warm paper).
 Same gold signal accent in both. Single source of truth for every color so

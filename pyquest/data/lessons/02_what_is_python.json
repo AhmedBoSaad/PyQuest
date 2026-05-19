@@ -5,12 +5,12 @@
   "category": "Foundations",
   "xp_reward": 30,
   "objective": "Get a feel for what Python looks like and run your first line of code.",
-  "explanation_md": "## What is Python?\n\nPython is a programming language created in 1991. It is:\n\n- **Readable** — code looks close to English.\n- **Friendly** — used to teach programming all over the world.\n- **Powerful** — used by Google, Netflix, NASA, scientists, game makers, and AI researchers.\n\nWhen you write Python, you save instructions in a file. The Python *interpreter* reads those instructions one by one and does what they say.\n\n## Your first line\n\n`print(\"Hello\")` is the most famous program in any language. It tells Python:\n\n> \"Show the word 'Hello' on the screen.\"\n\nIn the editor on the right, that exact line is already written. Press the **Run** button — then click **Check answer**.",
+  "explanation_md": "## What is Python?\n\nPython is a programming language created in 1991. It is:\n\n- **Readable**, code looks close to English.\n- **Friendly**, used to teach programming all over the world.\n- **Powerful**, used by Google, Netflix, NASA, scientists, game makers, and AI researchers.\n\nWhen you write Python, you save instructions in a file. The Python *interpreter* reads those instructions one by one and does what they say.\n\n## Your first line\n\n`print(\"Hello\")` is the most famous program in any language. It tells Python:\n\n> \"Show the word 'Hello' on the screen.\"\n\nIn the editor on the right, that exact line is already written. Press the **Run** button, then click **Check answer**.",
   "example_code": "print(\"Hello\")",
   "exercise_prompt": "Click Run to make Python say Hello, then click Check answer.",
   "starter_code": "print(\"Hello\")\n",
   "hints": [
-    "You don't need to type anything — just click ▶ Run.",
+    "You don't need to type anything, just click ▶ Run.",
     "After Run, click ✓ Check answer."
   ],
   "expected_output": "Hello",

@@ -5,7 +5,7 @@
   "category": "Basics",
   "xp_reward": 50,
   "objective": "Use print() to show text on the screen.",
-  "explanation_md": "## The print() function\n\n`print()` is a built-in tool in Python that **shows things on the screen** (in your console).\n\nThe word inside the brackets is what you want to show.\n\n```python\nprint(\"Hello, world!\")\n```\n\nA few rules:\n\n- The text must go inside **quotes** — either `\"double\"` or `'single'`.\n- The brackets `(` and `)` must be there.\n- You can use `print()` as many times as you like; each one goes on its own line.\n\n## Your turn\n\nMake Python print this **exact** message:\n\n> `I am learning Python`\n\nNo extra words, no quotes around it in the output.",
+  "explanation_md": "## The print() function\n\n`print()` is a built-in tool in Python that **shows things on the screen** (in your console).\n\nThe word inside the brackets is what you want to show.\n\n```python\nprint(\"Hello, world!\")\n```\n\nA few rules:\n\n- The text must go inside **quotes**, either `\"double\"` or `'single'`.\n- The brackets `(` and `)` must be there.\n- You can use `print()` as many times as you like; each one goes on its own line.\n\n## Your turn\n\nMake Python print this **exact** message:\n\n> `I am learning Python`\n\nNo extra words, no quotes around it in the output.",
   "example_code": "print(\"Hello, world!\")",
   "exercise_prompt": "Print exactly: I am learning Python",
   "starter_code": "# Write your code below\n",
@@ -31,7 +31,7 @@
     {
       "q": "What's wrong with this line?  print(Hello)",
       "options": [
-        "Nothing — it's correct",
+        "Nothing, it's correct",
         "print should be capitalised",
         "Hello needs to be inside quotes",
         "It needs a semicolon at the end"

@@ -7,7 +7,7 @@
 try:
     import onnxruntime  # noqa: F401
 except Exception:  # noqa: BLE001
-    # Kokoro will fail later with a friendly error in Settings — don't crash here.
+    # Kokoro will fail later with a friendly error in Settings; don't crash here.
     pass
 
 from pyquest.app import main

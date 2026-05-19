@@ -58,7 +58,7 @@ def stream_chat(
         resp.raise_for_status()
         # SSE is always UTF-8 per the spec. LM Studio sends Content-Type
         # 'text/event-stream' with no charset, which makes requests default to
-        # ISO-8859-1 — that mangles curly quotes, em dashes, etc. Force UTF-8.
+        # ISO-8859-1, which mangles curly quotes, etc. Force UTF-8.
         resp.encoding = "utf-8"
         for raw_bytes in resp.iter_lines(decode_unicode=False):
             if not raw_bytes:

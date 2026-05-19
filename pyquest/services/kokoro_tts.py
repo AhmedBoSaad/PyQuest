@@ -38,15 +38,15 @@ SAMPLE_RATE = 24000
 # Static voice list (matches the file shipped in voices-v1.0.bin).
 # Hard-coded so we can populate Settings without instantiating the model.
 KNOWN_VOICES: list[str] = [
-    # American English — Female
+    # American English: Female
     "af_alloy", "af_aoede", "af_bella", "af_heart", "af_jessica", "af_kore",
     "af_nicole", "af_nova", "af_river", "af_sarah", "af_sky",
-    # American English — Male
+    # American English: Male
     "am_adam", "am_echo", "am_eric", "am_fenrir", "am_liam", "am_michael",
     "am_onyx", "am_puck", "am_santa",
-    # British English — Female
+    # British English: Female
     "bf_alice", "bf_emma", "bf_isabella", "bf_lily",
-    # British English — Male
+    # British English: Male
     "bm_daniel", "bm_fable", "bm_george", "bm_lewis",
 ]
 

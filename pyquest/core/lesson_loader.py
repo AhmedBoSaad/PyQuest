@@ -111,7 +111,7 @@ def validate_lesson(data: dict[str, Any], source: str = "") -> None:
             continue
         if key in SUSPECT:
             raise LessonValidationError(
-                f"Unknown field '{key}'{where} — did you mean '{SUSPECT[key]}'?"
+                f"Unknown field '{key}'{where}. Did you mean '{SUSPECT[key]}'?"
             )
 
 

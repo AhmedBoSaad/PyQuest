@@ -1,11 +1,11 @@
 {
   "id": "05_strings",
   "order": 5,
-  "title": "Strings — working with text",
+  "title": "Strings: working with text",
   "category": "Basics",
   "xp_reward": 70,
   "objective": "Combine text values together to form new sentences.",
-  "explanation_md": "## Strings\n\nAny piece of text in Python is called a **string**. Strings always go inside quotes.\n\n```python\ngreeting = \"Hello\"\nname = \"Sam\"\n```\n\n### Joining strings (concatenation)\n\nYou can stick strings together with the `+` symbol:\n\n```python\nfull = greeting + \", \" + name\nprint(full)   # Hello, Sam\n```\n\n### f-strings (the modern way)\n\nIt is often nicer to use an **f-string**. Put `f` before the opening quote and use `{ }` to drop a variable in:\n\n```python\nname = \"Sam\"\nprint(f\"Hello, {name}!\")\n```\n\nBoth approaches give the same result.\n\n## Your turn\n\nMake two variables: `first` set to your first name, and `last` set to your last name (any names — they're just strings). Then print: \n\n> `Hello, FIRST LAST!`\n\nUse a single space between first and last, and end with an exclamation mark.\n\nFor the auto-check, please use `first = \"Ada\"` and `last = \"Lovelace\"` so the output is `Hello, Ada Lovelace!`.",
+  "explanation_md": "## Strings\n\nAny piece of text in Python is called a **string**. Strings always go inside quotes.\n\n```python\ngreeting = \"Hello\"\nname = \"Sam\"\n```\n\n### Joining strings (concatenation)\n\nYou can stick strings together with the `+` symbol:\n\n```python\nfull = greeting + \", \" + name\nprint(full)   # Hello, Sam\n```\n\n### f-strings (the modern way)\n\nIt is often nicer to use an **f-string**. Put `f` before the opening quote and use `{ }` to drop a variable in:\n\n```python\nname = \"Sam\"\nprint(f\"Hello, {name}!\")\n```\n\nBoth approaches give the same result.\n\n## Your turn\n\nMake two variables: `first` set to your first name, and `last` set to your last name (any names, they're just strings). Then print: \n\n> `Hello, FIRST LAST!`\n\nUse a single space between first and last, and end with an exclamation mark.\n\nFor the auto-check, please use `first = \"Ada\"` and `last = \"Lovelace\"` so the output is `Hello, Ada Lovelace!`.",
   "example_code": "name = \"Sam\"\nprint(f\"Hello, {name}!\")",
   "exercise_prompt": "Set first = \"Ada\" and last = \"Lovelace\", then print: Hello, Ada Lovelace!",
   "starter_code": "first = \"\"\nlast = \"\"\n# Now print the greeting using an f-string.\n",

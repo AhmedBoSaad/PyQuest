@@ -73,7 +73,7 @@ class DashboardPage(QWidget):
 
         self.tag = QLabel(
             "Pick up where you stopped, or wander the chapter index. "
-            "Your streak is alive — five minutes is enough to keep it."
+            "Your streak is alive; five minutes is enough to keep it."
         )
         self.tag.setStyleSheet("color: #C4BFB1; font-size: 15px; line-height: 1.5;")
         self.tag.setWordWrap(True)
@@ -91,7 +91,7 @@ class DashboardPage(QWidget):
             stats_row.addWidget(c, 1)
         outer.addLayout(stats_row)
 
-        # Continue card — hero
+        # Continue card (hero)
         cont = QFrame()
         cont.setObjectName("Card")
         cont.setStyleSheet(

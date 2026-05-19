@@ -291,7 +291,7 @@ class LessonView(QWidget):
         v.addWidget(eyebrow)
         v.addSpacing(18)
 
-        # Huge serif headline — 'Well done.'
+        # Huge serif headline: 'Well done.'
         self.done_title = QLabel("Well done.")
         self.done_title.setStyleSheet(
             "font-family: 'Instrument Serif','Cambria','Georgia',serif;"
@@ -426,7 +426,7 @@ class LessonView(QWidget):
         self.xp_pill.setText(f"+{lesson.xp_reward} XP")
 
         self.explanation.setMarkdown(lesson.explanation_md or "")
-        self.exercise_label.setText(lesson.exercise_prompt or "(No exercise — read the lesson and continue.)")
+        self.exercise_label.setText(lesson.exercise_prompt or "(No exercise; read the lesson and continue.)")
         if lesson.expected_output:
             self.expected_label.setText(f"Expected output: {lesson.expected_output}")
         else:
@@ -456,7 +456,7 @@ class LessonView(QWidget):
             self.btn_check.setEnabled(False)
             self.btn_quiz.setEnabled(True)
             self.btn_quiz.setText("Continue ▶" if not lesson.quiz else "Continue to quiz ▶")
-            self.feedback_label.setText("This is a reading lesson — when you're ready, continue.")
+            self.feedback_label.setText("This is a reading lesson. When you're ready, continue.")
         else:
             self.btn_run.setEnabled(True)
             self.btn_check.setEnabled(True)
@@ -783,7 +783,7 @@ class LessonView(QWidget):
         # current hint = the most recently revealed one
         idx = max(1, self._hint_index)
         total = max(1, len(self._lesson.hints))
-        # hint_label currently shows "Hint N: text" — reuse the raw text
+        # hint_label currently shows "Hint N: text"; reuse the raw text
         seg = hint_segment(idx, total, self._lesson.hints[idx - 1] if idx <= len(self._lesson.hints) else self.hint_label.text())
         get_narrator().play_segments([seg])
 

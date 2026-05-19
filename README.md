@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="PyQuest — Explore. Code. Master Python." width="100%" />
+  <img src="docs/banner.png" alt="PyQuest. Explore. Code. Master Python." width="100%" />
 </p>
 
 # PyQuest
@@ -10,7 +10,7 @@
 [![Version](https://img.shields.io/badge/version-0.1-blueviolet.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-PyQuest teaches Python from zero. Ten hand-written chapters, a sandboxed code playground, an offline voice that reads each lesson, and an optional local AI tutor that can hint, explain, or roast you. Everything runs on your computer — no accounts, no subscriptions, no telemetry.
+PyQuest teaches Python from zero. Ten hand-written chapters, a sandboxed code playground, an offline voice that reads each lesson, and an optional local AI tutor that can hint, explain, or roast you. Everything runs on your computer: no accounts, no subscriptions, no telemetry.
 
 ---
 
@@ -18,7 +18,7 @@ PyQuest teaches Python from zero. Ten hand-written chapters, a sandboxed code pl
 
 - **10 chapters** from "what is programming?" to lists, with auto-checks, hints, and quizzes
 - **Offline neural voice** ([Kokoro](https://github.com/thewh1teagle/kokoro-onnx), 28 voices, CPU-only)
-- **Offline voice commands** ([Vosk](https://alphacephei.com/vosk/)) — say *"run"*, *"check answer"*, *"next"*
+- **Offline voice commands** ([Vosk](https://alphacephei.com/vosk/)): say *"run"*, *"check answer"*, *"next"*
 - **Optional AI tutor** via local [LM Studio](https://lmstudio.ai/) with three moods: Friendly / Strict / Drill Sergeant
 - **Sandboxed runner**, XP & streaks, dark & light themes
 
@@ -40,9 +40,9 @@ python run.py                   # or just: pyquest
 
 On first launch, a **welcome wizard** offers three optional setup steps:
 
-1. **Voice (~340 MB)** — download Kokoro so lessons can read themselves aloud.
-2. **Voice commands (~50 MB)** — download Vosk for offline speech recognition.
-3. **AI tutor** — point at LM Studio.
+1. **Voice (~340 MB)**: download Kokoro so lessons can read themselves aloud.
+2. **Voice commands (~50 MB)**: download Vosk for offline speech recognition.
+3. **AI tutor**: point at LM Studio.
 
 Every step can be skipped. The core app works without any of them.
 
@@ -52,13 +52,13 @@ Every step can be skipped. The core app works without any of them.
 
 PyQuest can chat with a **local LLM** via [LM Studio](https://lmstudio.ai/). No API keys, no internet, no cost.
 
-1. Install LM Studio and pull a chat model (Llama 3.2 3B, Qwen 2.5 7B — whatever fits your machine).
+1. Install LM Studio and pull a chat model (Llama 3.2 3B, Qwen 2.5 7B, whatever fits your machine).
 2. In LM Studio: **Local Server → Start Server**.
 3. In PyQuest: **⚙️ Settings → AI Tutor → click "Refresh"** to fetch loaded models, then pick one.
 4. Tick *"Let the AI tutor jump in automatically"* if you want proactive help on wrong answers and errors.
 5. In any lesson, click **🤖 Ask tutor** to chat.
 
-The tutor sees your current lesson, your live-typed code, and your last error. It will not write the full solution. The **Drill Sergeant** persona escalates as you accumulate mistakes inside one lesson — and resets when you start a new one. Edit personas in [pyquest/data/personas.json](pyquest/data/personas.json).
+The tutor sees your current lesson, your live-typed code, and your last error. It will not write the full solution. The **Drill Sergeant** persona escalates as you accumulate mistakes inside one lesson, and resets when you start a new one. Edit personas in [pyquest/data/personas.json](pyquest/data/personas.json).
 
 ---
 
@@ -84,13 +84,13 @@ All offline. Mic is OFF by default.
 
 ## 📚 More lessons coming
 
-The first ten chapters cover the absolute basics — variables, strings, numbers, input, if-statements, loops, lists. Five stubs are already wired up for the next round (dictionaries, functions, files, error handling, mini-projects) and will land in upcoming releases. Watch the repo or check [CHANGELOG.md](CHANGELOG.md) for what's new.
+The first ten chapters cover the absolute basics: variables, strings, numbers, input, if-statements, loops, lists. Five stubs are already wired up for the next round (dictionaries, functions, files, error handling, mini-projects) and will land in upcoming releases. Watch the repo or check [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 ---
 
 ## 🛡 Sandboxing
 
-User code runs in a separate Python process with an AST pre-check (blocks dangerous imports, `eval`, `open`, dunder escapes) and a 5-second timeout. **This is a learning sandbox, not a security boundary** — don't paste untrusted code.
+User code runs in a separate Python process with an AST pre-check (blocks dangerous imports, `eval`, `open`, dunder escapes) and a 5-second timeout. **This is a learning sandbox, not a security boundary**, so don't paste untrusted code.
 
 ---
 

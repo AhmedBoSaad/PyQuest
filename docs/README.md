@@ -8,5 +8,5 @@ Enable **GitHub Pages**: repo Settings → Pages → Source = `Deploy from a bra
 
 ## Files
 
-- `index.html` — the single-page landing site
-- `banner.png` — hero image, referenced by `index.html`
+- `index.html`: the single-page landing site
+- `banner.png`: hero image, referenced by `index.html`

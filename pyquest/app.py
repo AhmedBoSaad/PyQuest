@@ -35,7 +35,7 @@ def main() -> int:
     app.setStyle("Fusion")
     _load_bundled_fonts()
     app.setStyleSheet(build_stylesheet(get_theme()))
-    # Default UI font — QSS overrides per widget with proper family lists.
+    # Default UI font. QSS overrides per widget with proper family lists.
     app.setFont(QFont("Segoe UI", 10))
 
     window = MainWindow()

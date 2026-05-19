@@ -74,7 +74,7 @@ def run_user_code(code: str, stdin_text: str = "") -> RunResult:
             stdout, stderr = "", ""
         timed_out = True
         stderr = (stderr or "") + (
-            f"\n[Timed out after {EXEC_TIMEOUT_SECONDS}s — possible infinite loop]"
+            f"\n[Timed out after {EXEC_TIMEOUT_SECONDS}s. Possible infinite loop.]"
         )
 
     return RunResult(

@@ -2,7 +2,7 @@
 
 A 3-step modal walk-through that guides non-technical users through optional
 downloads (Kokoro voice, Vosk speech model) and the AI tutor connection check.
-Every step can be skipped — the app works without any of them.
+Every step can be skipped; the app works without any of them.
 
 Set the 'first_run_done' state flag once complete so it never shows again.
 """
@@ -127,7 +127,7 @@ class WelcomeWizard(QDialog):
         ))
         v.addSpacing(6)
         self.voice_status = QLabel(
-            "✅ Voice model is already downloaded — you're set." if kokoro_tts.is_available()
+            "✅ Voice model is already downloaded. You're set." if kokoro_tts.is_available()
             else "Click below to download. You can skip and do this later from Settings."
         )
         self.voice_status.setObjectName("Dim")
@@ -156,7 +156,7 @@ class WelcomeWizard(QDialog):
         v.addWidget(_body(
             "Toggle a mic inside any lesson and say things like 'run', 'check answer', "
             "'show hint', 'next', or 'ask tutor'. Speech recognition is offline "
-            "(Vosk, ~50 MB). Totally optional — skip if you'd rather click."
+            "(Vosk, ~50 MB). Totally optional; skip if you'd rather click."
         ))
         v.addSpacing(6)
         self.speech_status = QLabel(
@@ -188,7 +188,7 @@ class WelcomeWizard(QDialog):
         v.addWidget(_title("A patient tutor that knows your code."))
         v.addWidget(_body(
             "PyQuest can chat with a local LLM running in LM Studio. The tutor sees "
-            "your current lesson, your code, and your last error — and can hint, "
+            "your current lesson, your code, and your last error, and can hint, "
             "explain, or (in drill-sergeant mode) roast you. Fully local. No cost.\n\n"
             "Install LM Studio from lmstudio.ai, load any chat model, then click "
             "'Start Server' in the Local Server tab."

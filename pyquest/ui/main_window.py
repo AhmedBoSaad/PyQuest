@@ -29,7 +29,7 @@ from pyquest.ui.widgets.xp_bar import XPBar
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle(f"{APP_NAME} — Learn Python")
+        self.setWindowTitle(f"{APP_NAME} | Learn Python")
         self.resize(1280, 820)
         self.setMinimumSize(1024, 720)
 
@@ -155,7 +155,7 @@ class MainWindow(QMainWindow):
         self._refresh_all()
         # Show the welcome wizard on first launch (once).
         # Use a short timer so the main window appears first, then the modal
-        # opens on top of it — feels much smoother than a wizard before paint.
+        # opens on top of it; feels much smoother than a wizard before paint.
         from PySide6.QtCore import QTimer
         QTimer.singleShot(150, self._maybe_show_wizard)
 
@@ -168,7 +168,7 @@ class MainWindow(QMainWindow):
         from pyquest.ui.widgets.welcome_wizard import WelcomeWizard
         wiz = WelcomeWizard(self)
         wiz.exec()
-        # Mark done regardless of how they closed it (skip is OK — Settings has the same options).
+        # Mark done regardless of how they closed it (skip is OK; Settings has the same options).
         self.progress.mark_first_run_done()
         self._refresh_all()
 
@@ -226,7 +226,7 @@ class MainWindow(QMainWindow):
         if candidates:
             self._open_lesson(candidates[0].id)
         else:
-            # No more lessons — back to the learning path.
+            # No more lessons. Back to the learning path.
             self._goto(1)
 
     def _on_lesson_completed(self, lesson_id: str, xp: int, quiz_score: int, quiz_total: int) -> None:

@@ -36,7 +36,7 @@ def check_exercise(check: dict[str, Any], code: str, stdout: str, stderr: str) -
     ctype = check.get("type", "none")
 
     if ctype == "none":
-        return CheckResult(True, "Concept understood — let's move on!")
+        return CheckResult(True, "Concept understood. Let's move on!")
 
     if ctype == "stdout_equals":
         expected = check["value"]
@@ -52,7 +52,7 @@ def check_exercise(check: dict[str, Any], code: str, stdout: str, stderr: str) -
         haystack = stdout if case_sensitive else stdout.lower()
         needle = expected if case_sensitive else expected.lower()
         if needle in haystack:
-            return CheckResult(True, "Looks good — your output includes what we expected.")
+            return CheckResult(True, "Looks good. Your output includes what we expected.")
         return CheckResult(False, f"Your output should contain: {expected!r}")
 
     if ctype == "regex":
@@ -67,7 +67,7 @@ def check_exercise(check: dict[str, Any], code: str, stdout: str, stderr: str) -
         hay = code if case_sensitive else code.lower()
         needle = expected if case_sensitive else expected.lower()
         if needle in hay:
-            return CheckResult(True, "Nice — your code uses what we expected.")
+            return CheckResult(True, "Nice. Your code uses what we expected.")
         return CheckResult(False, f"Your code should use: {expected}")
 
     return CheckResult(False, f"Unknown check type: {ctype}")

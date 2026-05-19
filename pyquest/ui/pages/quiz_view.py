@@ -109,7 +109,7 @@ class QuizView(QWidget):
             self._score += 1
             self.feedback_label.setText("✅  " + q.get("explain", "Correct!"))
         else:
-            self.feedback_label.setText("❌  " + q.get("explain", "Not quite — re-read the lesson."))
+            self.feedback_label.setText("❌  " + q.get("explain", "Not quite. Re-read the lesson."))
         self.btn_next.setText("Finish quiz" if self._index == len(self._questions) - 1 else "Next ▶")
         self.btn_next.setVisible(True)
 
@@ -126,7 +126,7 @@ class QuizView(QWidget):
         if not self._option_buttons or idx < 0 or idx >= len(self._option_buttons):
             return
         if not self._option_buttons[0].isEnabled():
-            # Already answered — voice "next" should advance instead.
+            # Already answered. Voice "next" should advance instead.
             return
         self._on_pick(idx)
 

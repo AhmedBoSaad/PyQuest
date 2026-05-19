@@ -39,7 +39,7 @@ def get_lmstudio_model() -> str:
 
 
 def get_proactive_tutor() -> bool:
-    # Default OFF — LM Studio is optional. The user can opt in from Settings
+    # Default OFF. LM Studio is optional. The user can opt in from Settings
     # after testing the connection.
     val = os.getenv("PYQUEST_PROACTIVE_TUTOR", "0").strip().lower()
     return val in ("1", "true", "yes", "on")

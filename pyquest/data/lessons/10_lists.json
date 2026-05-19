@@ -1,7 +1,7 @@
 {
   "id": "10_lists",
   "order": 10,
-  "title": "Lists — collections of things",
+  "title": "Lists: collections of things",
   "category": "Data",
   "xp_reward": 110,
   "objective": "Create a list, read items from it, and use it in a loop.",

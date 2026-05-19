@@ -1,7 +1,7 @@
 """Local rotating log file at userdata/logs/pyquest.log.
 
-No telemetry, no network. The file is a help when users file a GitHub issue —
-they can attach it. Rotated so it never gets huge.
+No telemetry, no network. The file is a help when users file a GitHub issue
+so they can attach it. Rotated so it never gets huge.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ def setup_logging(level: int = logging.INFO) -> None:
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     root = logging.getLogger()
     if getattr(root, "_pyquest_configured", False):
-        return  # idempotent — safe to call twice
+        return  # idempotent, safe to call twice
     root.setLevel(level)
 
     fmt = logging.Formatter(
