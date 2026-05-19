@@ -82,28 +82,9 @@ All offline. Mic is OFF by default.
 
 ---
 
-## ➕ Adding a lesson
+## 📚 More lessons coming
 
-Drop a JSON file into `pyquest/data/lessons/` with a higher `order` than the existing ones:
-
-```json
-{
-  "id": "16_my_lesson",
-  "order": 16,
-  "title": "My new lesson",
-  "xp_reward": 50,
-  "objective": "One-line objective.",
-  "explanation_md": "## Markdown body...",
-  "exercise_prompt": "Print exactly: hi",
-  "starter_code": "# write your code\n",
-  "hints": ["First hint.", "Second hint."],
-  "expected_output": "hi",
-  "check": {"type": "stdout_equals", "value": "hi"},
-  "quiz": [{"q": "...", "options": ["a","b","c","d"], "answer": 1, "explain": "..."}]
-}
-```
-
-Lessons are validated on load with helpful errors for typos. Check types: `stdout_equals`, `stdout_contains`, `regex`, `code_contains`, `none`.
+The first ten chapters cover the absolute basics — variables, strings, numbers, input, if-statements, loops, lists. Five stubs are already wired up for the next round (dictionaries, functions, files, error handling, mini-projects) and will land in upcoming releases. Watch the repo or check [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 ---
 
